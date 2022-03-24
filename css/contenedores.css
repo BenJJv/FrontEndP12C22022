@@ -1,0 +1,17 @@
+.caja{
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+    background-color: aqua;
+}
+.caja2{
+    width: 20%;
+    height: 50%;
+    background-color: blue;
+    margin: 1%;
+}
+
+header{
+    height: 150px;
+    background-color: red;
+}

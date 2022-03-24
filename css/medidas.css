@@ -1,0 +1,75 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+html{
+    font-size: 10px;
+}
+
+.caja{
+    border: 1px solid black;
+    height: 100%;
+    font-size: 10px;
+}
+
+.pixel{
+    background: orangered;
+    width: 100px;
+    height: 50px;
+}
+
+.pulgada{
+    background: rgb(204, 25, 25);
+    width: 1in;
+    height: 0.5in;
+}
+
+.centimetro{
+    background: rgb(8, 197, 49);
+    width: 3cm;
+    height: 2cm;
+}
+
+.milimetro{
+    background: rgb(207, 241, 8);
+    width: 25mm;
+    height: 20mm;
+}
+
+.punto{
+    background: rgb(12, 212, 238);
+    width: 70pt;
+    height: 50pt;
+}
+
+.porcentaje{
+    background: rgb(12, 212, 238);
+    width: 25%;
+    height: 10%;
+}
+
+.em{
+    background: rgb(49, 173, 18);
+    width: 5em;
+    height: 3em;
+}
+
+.Rem{
+    background: rgb(21, 66, 10);
+    width: 5rem;
+    height: 3rem;
+}
+
+
+.vh{
+    background: rgb(69, 14, 221);
+    width: 25vw;
+    height: 10vh;
+}
+
+.vw{
+    background: rgb(228, 17, 193);
+    width: 30vw;
+    height: 5vh;
+}
