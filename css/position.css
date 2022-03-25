@@ -1,0 +1,72 @@
+.positionStatic{
+    /*  Posicionamiento por defecto de los elementos */
+    position: static;
+    width: 25%;
+    height: 50px;
+    background: orangered;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.positionRelative{
+    position: relative;
+    width: 25%;
+    height: 50px;
+    background: yellowgreen;
+    border: 1px solid black;
+    margin: 10px;
+    top: 20px;
+    left: 20px;
+    /*
+        right: 20px;
+        bottom: 20px;
+    */
+}
+
+
+.positionFixed{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+    border: 1px solid black;
+    top: 0px;
+    left: 0px;
+    color: white;
+    z-index: 9999;
+    opacity: 0.8;
+}
+
+body{
+    height: 2000px;
+}
+
+
+.positionAbsolute{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.padreAbsolute{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+}
+
+
+.float{
+    float: left;
+    border: 1px solid black;
+    width: 10vw;
+}
