@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+
+            <div>
+                <!-- Columna 1-->
+                <h1>Formulario HTML</h1>
+
+                <label for="nombres">Nombres: </label>
+                <input class="inputtext" placeholder="Nombres" type="text" 
+                name="nombres" id="">
+
+                <label for="ape">Apellidos: </label>
+                <input class="inputtext" placeholder="Apellidos" type="text" 
+                name="ape" id="">
+
+                <label for="user">Username: </label>
+                <input class="inputtext" placeholder="Username" type="text" 
+                name="user" id="">
+
+                <label for="correo">Correo Electronico: </label>
+                <input class="inputtext" placeholder="Correo Electronico" type="email" 
+                name="correo" id="">
+
+                <label for="pass">Password: </label>
+                <input class="inputtext" placeholder="Password" type="password" 
+                name="pass" id="">
+
+                Femenino
+                <input type="radio" name="sexo">
+                Masculino
+                <input type="radio" name="sexo">
+                Otro
+                <input type="radio" name="sexo">
+            </div>
+            <div>
+                <!-- Columna 2-->
+                <label for="dir">Direccion: </label>
+                <input class="inputtext" placeholder="Direccion" type="text" 
+                name="dir" id="">
+
+
+                <label for="comuna">Comuna:</label>
+                <select name="comuna" id="" class="inputtext">
+                    <option value="">Curico</option>
+                    <option value="">Romeral</option>
+                    <option value="">Teno</option>
+                    <option value="">Molina</option>
+                </select>
+
+                <p>Preferencias Musicales:</p>
+                Rock
+                <input type="checkbox" name="musica">
+                Metal
+                <input type="checkbox" name="musica">
+                Cumbia
+                <input type="checkbox" name="musica">
+                Trap
+                <input type="checkbox" name="musica">
+
+                <label for="fecha">Fecha Nacimiento:</label>
+                <input class="inputtext" type="date" name="fecha">
+
+                <label for="archivo">Archivo:</label>
+                <input class="inputtext" type="file" name="archivo" id="">
+
+                <label for="color">Color:</label>
+                <input class="inputtext" type="color">
+
+
+            </div>
+
+            <div id="div3"> <!-- Columna 3-->
+                <div>
+                    <label for="comentarios">Comentarios: </label>
+                    <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btncontainer">
+                    <input class="btn" type="submit" value="Enviar Informacion">
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
