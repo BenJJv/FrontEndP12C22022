@@ -1,4 +1,5 @@
-/*
+/* 
+
 + 	Addition
 - 	Subtraction
 * 	Multiplication
@@ -7,10 +8,6 @@
 % 	Modulus (Division Remainder)
 ++ 	Increment
 -- 	Decrement
-*/
-
-
-/*
 
 == 	equal to
 === 	equal value and equal type
@@ -24,16 +21,16 @@
 
 */
 
-const x = 10; const y = "10";
+let x = "10"; // string
+let y = 10; // number
 console.log(x == y) // true
 console.log(x === y) // false
 
 
-/*
+/* Operadores de Logicos
 
-&& 	logical and
-|| 	logical or
-! 	logical not
+&& Logico AND (Y)
+|| Logico OR (O)
+! Negacion 
 
 */
-((x==y && y != x (!x == 10 || !y == x)))

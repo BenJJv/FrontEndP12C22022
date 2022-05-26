@@ -1,69 +1,52 @@
+// Variables JS
 /* 
-var => forma nativa de declarar variables en JS
-var => alcance (SCOPE) GLOBAL/FUNCION
-var => se puede re-declarar
-*/ 
-var nombreVariable;
-nombreVariable = "valorVariable";
-var nombreVariable2 = "valorVariable";
+    var
+    let
+    const
+*/
 
-var nombreVariable = 10;
+var name;
+name = "Joe";
+console.log(name);
 
-/* 
-let => forma nueva (2015) de declarar variables en JS
-let => alcance (SCOPE) BLOQUE
-let => NO se puede re-declarar
-*/ 
+var name = "July";
+console.log(name);
 
-//let nombreVariable;
-nombreVariable = 10;
+let lastname = "Amstrong";
+console.log(lastname);
 
-//let nombreVariable2 = 10;
-//let nombreVariable2 = 10; //ERROR
+/*let lastname = "Musk"
+console.log(lastname);*/
 
-for (let i = 0; i < 10; i++) {
-    console.log(i);
-}
-for (let i = 0; i < 10; i++) {
-    console.log(i);
-}
+//Diferencias
+// var puede ser RE-DECLARADO mientras que let NO
+// Alcance (SCOPE) => var funcion/global
+// Alcance (SCOPE) => let bloque
 
-
-
-
-
-console.log(i); //Error: i no esta declarado
-
-
-function test(){
-    var variableTest = 10;
-    for (let i = 0; i < 10; i++) {
-        console.log(i)
-        console.log(variableTest)
-        var variableTest2 = "HOLA"
-    }
-    let i = 20;
-    console.log(i); // Error: i no esta declarado
-    console.log(variableTest)
-    console.log(variableTest2)
+var x = 10;
+{
+    let y = 10;
+    console.log(y);
 }
 
+console.log(x)
+//console.log(y) // y is not defined
 
-/* 
-const => forma nueva (2015) de declarar variables en JS
-const => alcance (SCOPE) BLOQUE
-const => NO se puede re-declarar
-const => NO se puede re-asignar
-const => NO puede cambiar su valor completamente
-*/ 
-const nombreConst = 10;
-//nombreConst = 12; // Error
-//const nombreConst = 20; // Error
+const PI = 3.1416;
+console.log(PI);
+//PI = 3.1417;
 
-const arrayNombres = ["Esto", "Es", "Un", "Array"]; // Array
-arrayNombres = ["Otro", "Array"] // Error
+const medida = 10;
 
-arrayNombres[0] = "Otro Valor";
-console.log(arrayNombres)
+// usamos const cuando estamos seguros de 
+// que su valor no cambiara en el tiempo
 
-arrayNombres.push("Otro Nombre")
+const autos = ["Volvo", "Mazda", "Nissan"];
+//autos = ["Kia", "Mercedez", "Subaru"]; // Error
+
+autos[0] = "Toyota";
+
+autos.push("Audi")
+
+console.log(autos);
+
