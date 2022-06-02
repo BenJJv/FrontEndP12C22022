@@ -108,6 +108,32 @@ for (let i = 0; i < Personas.length; i++) {
     btnCorreo.innerHTML = '<i class="fa-solid fa-envelope"></i>   Email'
     btnCorreo.classList.add("m-2")
 
+
+    //Event Listener
+    btnLinkedIn.addEventListener("click", function(e){
+        //Codigo que se produce cuando el Evento se desencadena
+        alert("Click en el Btn LinkedIn")
+
+    })
+
+    card.addEventListener("mouseenter",function(e){
+        card.classList.add("shadow")
+        console.log(e.target)
+    })
+
+    card.addEventListener("mouseleave",function(e){
+        card.classList.remove("shadow")
+        console.log(e.target)
+    })
+
+    btnCorreo.addEventListener("click", function(e){
+        root.removeChild(card);
+        console.log(e.target)
+    })
+
+
+
+
     btnContainer.appendChild(btnLinkedIn)
     btnContainer.appendChild(btnCorreo)
 
