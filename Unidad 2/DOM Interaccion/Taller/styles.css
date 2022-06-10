@@ -1,0 +1,13 @@
+#carro{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    z-index: 9;
+    height: 100%;
+    background-color: white;
+}
+
+#carroContainer{
+    margin-top: 80px;
+}
